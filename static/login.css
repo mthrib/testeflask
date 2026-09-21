@@ -1,0 +1,203 @@
+/* =========================
+   PÁGINA DE LOGIN
+   ========================= */
+
+.login-header {
+    color: white;
+    width: 100%;
+    height: 180px;
+
+    background-image: linear-gradient(
+        to top,
+        #1A5C37,
+        #3ddc84
+    );
+}
+
+.login-header h1 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.login-header p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.723);
+    margin-top: 20px;
+}
+
+
+/* Área principal */
+
+.login-main {
+    min-height: calc(100vh - 240px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor0);
+
+    box-shadow: none;
+}
+
+
+/* Caixa do login */
+
+.login-box {
+    width: 90%;
+    max-width: 400px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.login-box h1 {
+    text-align: center;
+
+    font-family: 'android';
+
+    color: #1A6038;
+
+    margin-bottom: 30px;
+}
+
+
+/* Campos */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+
+    color: #1A6038;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.campo input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    border: 2px solid #c5ebd6;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.campo input:focus {
+    border-color: #2fa866;
+
+    box-shadow: 0px 0px 5px rgba(47, 168, 102, 0.4);
+}
+
+
+/* Lembrar / esqueci senha */
+
+.lembrar {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+}
+
+.lembrar label {
+    color: #444;
+}
+
+.lembrar input {
+    accent-color: #2fa866;
+}
+
+.lembrar a {
+    color: #1A6038;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.lembrar a:hover {
+    text-decoration: underline;
+}
+
+
+/* Botão */
+
+.login-box button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #2fa866;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.login-box button:hover {
+    background-color: #1A5C37;
+
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Cadastro */
+
+.cadastro {
+    text-align: center !important;
+
+    margin-top: 25px;
+
+    padding: 0 !important;
+
+    text-indent: 0 !important;
+
+    font-size: 14px !important;
+}
+
+.cadastro a {
+    color: #1A6038;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
