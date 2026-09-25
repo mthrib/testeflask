@@ -25,22 +25,36 @@
 
             <h1>Login</h1>
 
-            <form action="#" method="post">
-                {{form.csrf_token}}
+            <form method="post">
 
-                {{form.email.label()}}
-                {{form.email}}
+                {{ form.csrf_token }}
 
-                {{form.senha.label()}}
-                {{form.senha}}
+                <div class="campo">
+                    {{ form.email.label }}
+                    {{ form.email(placeholder="Digite seu e-mail") }}
+                </div>
 
-                {{form.submit()}}
+                <div class="campo">
+                    {{ form.senha.label }}
+                    {{ form.senha(placeholder="Digite sua senha") }}
+                </div>
+
+                {{ form.submit(class="botao-login") }}
+
+                <div class="lembrar">
+                    <label>
+                        <input type="checkbox" name="lembrar">
+                        Lembrar de mim
+                    </label>
+
+                    <a href="#">Esqueci minha senha</a>
+                </div>
 
             </form>
 
             <p class="cadastro">
                 Ainda não possui uma conta?
-                <a href="/cadastro">Cadastre-se</a>
+                <a href="#">Cadastre-se</a>
             </p>
 
         </div>
